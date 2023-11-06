@@ -6,7 +6,7 @@
 {{ with .Params.Keywords }}<meta name="keywords" content="{{ delimit . ", " }}">{{ end }}
 
 {{- $title := partialCached "data/title" . .RelPermalink -}}
-<title>{{ $title }}</title>
+<title>Nafaal's Blog</title>
 
 <link rel='canonical' href='{{ .Permalink }}'>
 
@@ -19,7 +19,7 @@
 {{- end -}}
 
 {{ with .Site.Params.favicon }}
-    <link rel="shortcut icon" href="{{ . }}" />
+    <link rel="shortcut icon" href="https://nafaal.com/img/favicon.png" />
 {{ end }}
 
 {{- template "_internal/google_analytics.html" . -}}
