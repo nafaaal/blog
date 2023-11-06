@@ -26,12 +26,12 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --scrollbar-track: var(--body-background);
 
     &[data-scheme="dark"] {
-        --body-background: #303030;
+        --body-background: #18191A;
         --accent-color: #ecf0f1;
         --accent-color-darker: #bdc3c7;
         --accent-color-text: #000;
         --body-text-color: rgba(255, 255, 255, 0.7);
-        --scrollbar-thumb: hsl(0, 0%, 40%);
+        --scrollbar-thumb: #242526;
         --scrollbar-track: var(--body-background);
     }
 }
@@ -78,7 +78,7 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     }
 
     &[data-scheme="dark"] {
-        --card-background: #424242;
+        --card-background: #242526;
         --card-background-selected: rgba(255, 255, 255, 0.16);
         --card-text-color-main: rgba(255, 255, 255, 0.9);
         --card-text-color-secondary: rgba(255, 255, 255, 0.7);
@@ -114,7 +114,7 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --link-background-opacity: 0.5;
     --link-background-opacity-hover: 0.7;
 
-    --pre-background-color: #272822;
+    --pre-background-color: #242526;
     --pre-text-color: #f8f8f2;
 
     --code-background-color: rgba(0, 0, 0, 0.12);
@@ -132,7 +132,7 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
         --table-border-color: #717171;
         --tr-even-background-color: #545454;
 
-        --blockquote-background-color: rgb(75 75 75);
+        --blockquote-background-color: rgb(50, 50, 50);
     }
 }
 
