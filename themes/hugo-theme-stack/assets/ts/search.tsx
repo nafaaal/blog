@@ -206,7 +206,6 @@ class Search {
         if (!this.data) {
             /// Not fetched yet
             // const jsonURL = this.form.dataset.json;
-            console.log(this.Site)
             const jsonURL = "/blog/search/index.json" //
             this.data = await fetch(jsonURL).then(res => res.json());
             const parser = new DOMParser();
