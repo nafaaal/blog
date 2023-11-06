@@ -1,8 +1,9 @@
 ---
-menu:
-    main:
-        name: Home
-        weight: 1
-        params:
-            icon: home
+# menu:
+#     main:
+#         name: Homepage
+#         weight: 1
+#         url: "https://nafaal.com"
+#         params:
+#             icon: home
 ---

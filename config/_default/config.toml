@@ -2,7 +2,7 @@
 baseurl = 'https://nafaal.com/blog'
 languageCode = "en-us"
 paginate = 5
-title = "Hugo Theme Stack Starter"
+title = "nafaal.com/blog"
 theme = "hugo-theme-stack"
 staticDir = ['blog']
 relativeURLs = true
