@@ -5,6 +5,8 @@ paginate = 5
 title = "Hugo Theme Stack Starter"
 theme = "hugo-theme-stack"
 staticDir = ['blog']
+relativeURLs = true
+canonifyURLs = true
 
 # Theme i18n support
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk, ar
