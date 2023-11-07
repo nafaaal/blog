@@ -2,7 +2,7 @@
 baseurl = 'https://nafaal.com/blog'
 languageCode = "en-us"
 paginate = 5
-title = "nafaal.com/blog"
+title = "nafaal.com/blogㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ"
 theme = "hugo-theme-stack"
 staticDir = ['blog']
 
