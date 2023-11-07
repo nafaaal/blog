@@ -7,7 +7,7 @@
  */
 
 .hamburger {
-    padding-top: 10px;
+    padding-top: 0px;
     display: inline-block;
     cursor: pointer;
     transition-property: opacity, filter;
@@ -35,7 +35,7 @@
 
 .hamburger-box {
     width: 30px;
-    height: 24px;
+    height: 15px;
     display: inline-block;
     position: relative;
 }
@@ -49,8 +49,9 @@
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
-    width: 30px;
+    width: 20px;
     height: 2px;
+    margin: 2px 0;
     background-color: var(--card-text-color-main);
     border-radius: 4px;
     position: absolute;
