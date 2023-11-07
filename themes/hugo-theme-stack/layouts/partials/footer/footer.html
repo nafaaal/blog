@@ -1,23 +1,22 @@
 {{- $ThemeVersion := "3.21.0" -}}
-<footer class="site-footer">
-    <section class="copyright">
-        &copy; 
-        {{ if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format "2006"))) }}
-            {{ .Site.Params.footer.since }} - 
-        {{ end }}
-        {{ now.Format "2006" }} {{ default .Site.Title .Site.Copyright }}
-    </section>
-    
-    <section class="powerby">
-        {{ with .Site.Params.footer.customText }}
-            {{ . | safeHTML }} <br/>
-        {{ end }}
-
-        {{- $Generator := `<a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>` -}}
-        {{- $Theme := printf `<b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="%s">Stack</a></b>` $ThemeVersion -}}
-        {{- $DesignedBy := `<a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>` -}}
-
-        {{ T "footer.builtWith" (dict "Generator" $Generator) | safeHTML }} <br />
-        {{ T "footer.designedBy" (dict "Theme" $Theme "DesignedBy" $DesignedBy) | safeHTML }}
-    </section>
+<footer class="site-footer footer">
+        <div class="footer__inner">
+          <a href="/" class="logo" style="text-decoration: none;">
+        
+          <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" width="44" height="44" viewBox="0 0 44 44">
+        <polyline fill="none" stroke="#b1b3b9" stroke-width="6" points="15 8 29.729 22.382 15 35.367" />
+      </svg>
+      </span>
+          <span class="logo__text">nafaal.com/blog</span>
+          <!-- <span class="logo__cursor"></span> -->
+      </a>
+      <div class="footer__inner footer__inner--small ">
+        <div class="copyright">
+          <span><a target="_blank" href="https://twitter.com/nafaaal">Twitter</a></span>
+          <span><a target="_blank" href="https://www.linkedin.com/in/nafaaal/">Linkedin</a></span>
+          <span><a target="_blank" href="https://github.com/nafaaal">Github</a></span>
+          <span><a href="https://nafaal.com/credit/">Credits</a></span>
+        </div>
+      </div>
+        </div>
 </footer>

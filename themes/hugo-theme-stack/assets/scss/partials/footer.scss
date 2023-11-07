@@ -1,16 +1,16 @@
 footer.site-footer {
-    padding: 20px 0 var(--section-separation) 0;
+    padding: 40px 0 var(--section-separation) 0;
     font-size: 1.4rem;
     line-height: 1.75;
 
-    &:before {
-        content: "";
-        display: block;
-        height: 3px;
-        width: 50px;
-        background: var(--body-text-color);
-        margin-bottom: 20px;
-    }
+    // &:before {
+    //     content: "";
+    //     display: block;
+    //     height: 3px;
+    //     width: 50px;
+    //     background: var(--body-text-color);
+    //     margin-bottom: 20px;
+    // }
 
     .copyright {
         color: var(--accent-color);
@@ -28,3 +28,101 @@ footer.site-footer {
         }
     }
 }
+
+.logo {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    font-weight: 700;
+    text-decoration: none;
+    float: left;
+  }
+  .logo img {
+    height: 44px;
+  }
+  .logo__mark {
+    align-items: center;
+    display: inline-flex;
+    margin-right: 5px;
+  }
+  .logo__mark .greater-icon {
+    height: 100%;
+    width: 0.95rem;
+  }
+  .logo__mark .greater-icon path {
+    stroke: currentColor;
+    stroke-width: 8px;
+  }
+  .logo__text {
+    font-size: 1.5rem;
+  }
+  .logo__cursor {
+    -webkit-animation: cursor 1s infinite;
+    animation: cursor 1s infinite;
+    background: #d580ff;
+    border-radius: 1px;
+    display: inline-block;
+    height: 1rem;
+    margin-left: 5px;
+    width: 10px;
+  }
+
+.footer__inner--small {
+    justify-content: flex-end
+  }
+  
+  .footer__inner--small .copyright {
+    font-size: 1rem!important
+  }
+  
+  .footer__inner--small a {
+    text-decoration: none!important
+  }
+  
+  
+  .footer .copyright {
+    padding-left: 450px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1rem;
+    color: var(--light-color-secondary)
+  }
+  
+  .footer .copyright--user {
+    margin: auto;
+    text-align: center
+  }
+  
+  .footer .copyright>:not(:last-child) {
+    border-right: 1px solid;
+    padding-right: 10px;
+    margin-right: 10px
+  }
+
+  @media (max-width:1200px) {
+    .footer .copyright {
+      flex-direction: column;
+      padding-left: 150px;
+      display: inline;
+      margin-top: 10px
+    }
+  
+  @media (max-width:900px) {
+    .footer .copyright>:not(:last-child) {
+      border: none;
+      padding: 5px;
+      margin: 5px
+    }
+  }
+
+  
+  @media (max-width:900px) {
+    .footer .copyright {
+      flex-direction: column;
+      padding-left: 120px;
+      display: inline;
+      margin-top: 10px;
+    }
+  }
+  }
